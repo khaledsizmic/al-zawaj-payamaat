@@ -30,7 +30,7 @@
     },
     "city": {
       "type": "string",
-      "max_length": 120
+      "max_length": 150
     },
     "about": {
       "type": "text"
