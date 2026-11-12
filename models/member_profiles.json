@@ -36,7 +36,7 @@
     },
     "city": {
       "type": "string",
-      "max_length": 150,
+      "max_length": 160,
       "required": false,
       "searchable": true
     },
