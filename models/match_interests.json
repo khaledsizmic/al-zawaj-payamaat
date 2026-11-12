@@ -1,0 +1,39 @@
+{
+  "table": "match_interests",
+  "soft_delete": true,
+  "indexes": [
+    {
+      "columns": ["from_user_id"]
+    },
+    {
+      "columns": ["to_user_id"]
+    }
+  ],
+  "schema": {
+    "from_user_id": {
+      "type": "integer",
+      "required": true
+    },
+    "to_user_id": {
+      "type": "integer",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "enum": ["pending", "accepted", "declined"]
+    },
+    "message": {
+      "type": "text"
+    }
+  },
+  "access": {
+    "fetch": [{"role": "user", "condition": "from_user_id = {user_id}"}, {"role": "admin"}],
+    "search": [{"role": "user", "condition": "from_user_id = {user_id}"}, {"role": "admin"}],
+    "count": [{"role": "user", "condition": "from_user_id = {user_id}"}, {"role": "admin"}],
+    "exists": [{"role": "user", "condition": "from_user_id = {user_id}"}, {"role": "admin"}],
+    "create": [{"role": "user", "condition": "from_user_id = {user_id}"}, {"role": "admin"}],
+    "update": [{"role": "user", "condition": "from_user_id = {user_id}"}, {"role": "admin"}],
+    "delete": [{"role": "user", "condition": "from_user_id = {user_id}"}, {"role": "admin"}]
+  }
+}
