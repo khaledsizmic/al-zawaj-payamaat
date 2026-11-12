@@ -1,0 +1,48 @@
+{
+  "progress": {
+    "completeness_score": 0,
+    "phase_indicator": 1,
+    "last_updated": "2026-11-12T11:35:07.383832+00:00",
+    "domains": {
+      "identity_and_access": {
+        "status": "PARTIAL",
+        "items": []
+      },
+      "user_data_and_lifecycle": {
+        "status": "MISSING",
+        "items": []
+      },
+      "billing_and_commerce": {
+        "status": "MISSING",
+        "items": []
+      },
+      "storage_and_media": {
+        "status": "MISSING",
+        "items": []
+      },
+      "communications": {
+        "status": "MISSING",
+        "items": []
+      },
+      "async_and_background": {
+        "status": "MISSING",
+        "items": []
+      },
+      "ai_and_intelligence": {
+        "status": "MISSING",
+        "items": []
+      },
+      "operational_and_nfrs": {
+        "status": "MISSING",
+        "items": []
+      }
+    },
+    "scope_wall": {
+      "items": []
+    },
+    "models_generated": [],
+    "hooks_generated": [],
+    "questions_asked": 1,
+    "exploring_domain": "identity_and_access"
+  }
+}
