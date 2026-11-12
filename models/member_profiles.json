@@ -41,7 +41,9 @@
       "searchable": true
     },
     "about": {
-      "type": "text"
+      "type": "text",
+      "required": false,
+      "searchable": true
     }
   },
   "access": {
