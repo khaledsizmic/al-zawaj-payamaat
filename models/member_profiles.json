@@ -38,7 +38,8 @@
       "type": "string",
       "max_length": 160,
       "required": false,
-      "searchable": true
+      "searchable": true,
+      "default": "Karachi"
     },
     "about": {
       "type": "text"
