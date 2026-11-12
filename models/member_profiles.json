@@ -3,7 +3,9 @@
   "soft_delete": true,
   "indexes": [
     {
-      "columns": ["user_id"]
+      "columns": [
+        "user_id"
+      ]
     }
   ],
   "schema": {
@@ -20,7 +22,10 @@
     "gender": {
       "type": "string",
       "required": true,
-      "enum": ["male", "female"]
+      "enum": [
+        "male",
+        "female"
+      ]
     },
     "age": {
       "type": "integer",
@@ -30,19 +35,73 @@
     },
     "city": {
       "type": "string",
-      "max_length": 120
+      "max_length": 120,
+      "required": false,
+      "searchable": true
     },
     "about": {
       "type": "text"
     }
   },
   "access": {
-    "fetch": [{"role": "user"}, {"role": "admin"}],
-    "search": [{"role": "user"}, {"role": "admin"}],
-    "count": [{"role": "user"}, {"role": "admin"}],
-    "exists": [{"role": "user"}, {"role": "admin"}],
-    "create": [{"role": "user", "condition": "user_id = {user_id}"}, {"role": "admin"}],
-    "update": [{"role": "user", "condition": "user_id = {user_id}"}, {"role": "admin"}],
-    "delete": [{"role": "user", "condition": "user_id = {user_id}"}, {"role": "admin"}]
+    "fetch": [
+      {
+        "role": "user"
+      },
+      {
+        "role": "admin"
+      }
+    ],
+    "search": [
+      {
+        "role": "user"
+      },
+      {
+        "role": "admin"
+      }
+    ],
+    "count": [
+      {
+        "role": "user"
+      },
+      {
+        "role": "admin"
+      }
+    ],
+    "exists": [
+      {
+        "role": "user"
+      },
+      {
+        "role": "admin"
+      }
+    ],
+    "create": [
+      {
+        "role": "user",
+        "condition": "user_id = {user_id}"
+      },
+      {
+        "role": "admin"
+      }
+    ],
+    "update": [
+      {
+        "role": "user",
+        "condition": "user_id = {user_id}"
+      },
+      {
+        "role": "admin"
+      }
+    ],
+    "delete": [
+      {
+        "role": "user",
+        "condition": "user_id = {user_id}"
+      },
+      {
+        "role": "admin"
+      }
+    ]
   }
 }
