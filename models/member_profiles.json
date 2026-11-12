@@ -38,7 +38,7 @@
       "type": "string",
       "max_length": 160,
       "required": false,
-      "searchable": true
+      "searchable": false
     },
     "about": {
       "type": "text"
