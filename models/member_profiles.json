@@ -17,7 +17,8 @@
     "full_name": {
       "type": "string",
       "required": true,
-      "max_length": 255
+      "max_length": 255,
+      "searchable": true
     },
     "gender": {
       "type": "string",
