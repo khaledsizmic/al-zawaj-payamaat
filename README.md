@@ -5,3 +5,5 @@ Muslim matrimony match making. Members create a profile and send interests to ot
 Status: early development.
 
 Run the API with `kirak run`.
+
+Models live in `models/`, one file per model.
